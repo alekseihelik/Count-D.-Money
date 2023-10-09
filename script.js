@@ -5,6 +5,11 @@ let qamount = 0;
 let hdamount = 0;
 let dolamount = 0;
 
+function updateTotalValue(){
+    let totalValue = (0.01 * pamount) + (0.05 * namount) + (0.10 * damount) + (0.25 * qamount) + (0.50 * hdamount) + (1.00 * dolamount);
+    document.getElementById("totalvalue").textContent = "Total value of all coins: $" + totalValue.toFixed(2);
+}
+
 function updatePenny(){
     document.getElementById("pamount").textContent = "Amount of pennies: " + pamount;
     document.getElementById("pvalue").textContent = "Total value of pennies: $" + Math.round((0.01*pamount) * 100) / 100;
@@ -38,18 +43,21 @@ function updateDollar(){
 function addPenny(){
     pamount++;
     updatePenny();
+    updateTotalValue();
 }
 
 function subtractPenny(){
     if(pamount > 0){
         pamount--;
         updatePenny();
+        updateTotalValue();
     }
 }
 
 function addPenny5(){
     pamount+=5;
     updatePenny();
+    updateTotalValue();
 }
 
 function subtractPenny5(){
@@ -60,23 +68,27 @@ function subtractPenny5(){
         pamount=0;
     }
     updatePenny();
+    updateTotalValue();
 }
 
 function addNickel(){
     namount++;
     updateNickel();
+    updateTotalValue();
 }
 
 function subtractNickel(){
     if(namount > 0){
         namount--;
         updateNickel();
+        updateTotalValue();
     }
 }
 
 function addNickel5(){
     namount+=5;
     updateNickel();
+    updateTotalValue();
 }
 
 function subtractNickel5(){
@@ -87,24 +99,27 @@ function subtractNickel5(){
         namount=0;
     }
     updateNickel();
+    updateTotalValue();
 }
 
-// Copying the pattern for dimes
 function addDime(){
     damount++;
     updateDime();
+    updateTotalValue();
 }
 
 function subtractDime(){
     if(damount > 0){
         damount--;
         updateDime();
+        updateTotalValue();
     }
 }
 
 function addDime5(){
     damount+=5;
     updateDime();
+    updateTotalValue();
 }
 
 function subtractDime5(){
@@ -115,23 +130,27 @@ function subtractDime5(){
         damount=0;
     }
     updateDime();
+    updateTotalValue();
 }
 
 function addQuarter(){
     qamount++;
     updateQuarter();
+    updateTotalValue();
 }
 
 function subtractQuarter(){
     if(qamount > 0){
         qamount--;
         updateQuarter();
+        updateTotalValue();
     }
 }
 
 function addQuarter5(){
     qamount+=5;
     updateQuarter();
+    updateTotalValue();
 }
 
 function subtractQuarter5(){
@@ -142,23 +161,27 @@ function subtractQuarter5(){
         qamount=0;
     }
     updateQuarter();
+    updateTotalValue();
 }
 
 function addHalfDollar(){
     hdamount++;
     updateHalfDollar();
+    updateTotalValue();
 }
 
 function subtractHalfDollar(){
     if(hdamount > 0){
         hdamount--;
         updateHalfDollar();
+        updateTotalValue();
     }
 }
 
 function addHalfDollar5(){
     hdamount+=5;
     updateHalfDollar();
+    updateTotalValue();
 }
 
 function subtractHalfDollar5(){
@@ -169,23 +192,27 @@ function subtractHalfDollar5(){
         hdamount=0;
     }
     updateHalfDollar();
+    updateTotalValue();
 }
 
 function addDollar(){
     dolamount++;
     updateDollar();
+    updateTotalValue();
 }
 
 function subtractDollar(){
     if(dolamount > 0){
         dolamount--;
         updateDollar();
+        updateTotalValue();
     }
 }
 
 function addDollar5(){
     dolamount+=5;
     updateDollar();
+    updateTotalValue();
 }
 
 function subtractDollar5(){
@@ -196,4 +223,5 @@ function subtractDollar5(){
         dolamount=0;
     }
     updateDollar();
+    updateTotalValue();
 }
