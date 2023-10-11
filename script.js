@@ -7,7 +7,7 @@ let dolamount = 0;
 
 function updateTotalValue(){
     let totalValue = (0.01 * pamount) + (0.05 * namount) + (0.10 * damount) + (0.25 * qamount) + (0.50 * hdamount) + (1.00 * dolamount);
-    document.getElementById("totalvalue").textContent = "Total value of all coins: $" + totalValue.toFixed(2);
+    document.getElementById("totalvalue").textContent = "$" + totalValue.toFixed(2);
 }
 
 function updatePenny(){

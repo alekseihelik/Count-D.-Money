@@ -17,10 +17,12 @@ body, html {
 
 .header {
     position: absolute;
-    top: 5px;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
     color: #85bb65; /* Set text color to #85bb65 */
+    font-size: 20px;
+    font-family: 'Brush Script MT', cursive;
 }
 
 .row {
@@ -31,14 +33,15 @@ body, html {
     flex: 1;
     background-color: #4caf50; /* Green color */
     color: #fff; /* Text color */
-    height: 200px; /* Fixed height for the boxes */
+    height: 205px; /* Fixed height for the boxes */
     min-width: 200px; /* Minimum width for the boxes */
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin: 10px;
-    font-size: 18px; /* Increased font size */
+    font-size: 16px; /* Increased font size */
     overflow: hidden; /* Prevent content from affecting box size */
     color: #73efe7; /* Set text color to black */
+    font-family: 'Papyrus', sans-serif;
 }
 
 .full-width-box {
@@ -52,6 +55,7 @@ body, html {
     font-size: 18px; /* Increased font size */
     overflow: hidden; /* Prevent content from affecting box size */
     color: #73efe7;
+    font-family: 'Papyrus', sans-serif;
 }
 
 button {
@@ -61,4 +65,13 @@ button {
     padding: 10px 15px; /* Add some padding for better appearance */
     margin: 5px; /* Add some margin for spacing between buttons */
     cursor: pointer; /* Add cursor pointer on hover */
+    border-radius: 5px; /* Rounded edges */
+}
+
+div {
+    font-size: 20px;
+}
+
+p {
+    font-size: 28px;
 }
