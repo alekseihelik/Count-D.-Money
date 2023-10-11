@@ -1,0 +1,64 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('background/raining\ coins.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.container {
+    text-align: center;
+}
+
+.header {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #85bb65; /* Set text color to #85bb65 */
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+    background-color: #4caf50; /* Green color */
+    color: #fff; /* Text color */
+    height: 200px; /* Fixed height for the boxes */
+    min-width: 200px; /* Minimum width for the boxes */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    font-size: 18px; /* Increased font size */
+    overflow: hidden; /* Prevent content from affecting box size */
+    color: #73efe7; /* Set text color to black */
+}
+
+.full-width-box {
+    background-color: #4caf50; /* Green color */
+    color: #fff; /* Text color */
+    height: 150px; /* Fixed height for the box */
+    min-width: 600px; /* Minimum width for the full-width box */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    font-size: 18px; /* Increased font size */
+    overflow: hidden; /* Prevent content from affecting box size */
+    color: #73efe7;
+}
+
+button {
+    background-color: #f18ce9; /* Change button background color */
+    color: #fff; /* Change button text color */
+    border: none; /* Remove button border */
+    padding: 10px 15px; /* Add some padding for better appearance */
+    margin: 5px; /* Add some margin for spacing between buttons */
+    cursor: pointer; /* Add cursor pointer on hover */
+}

@@ -11,33 +11,33 @@ function updateTotalValue(){
 }
 
 function updatePenny(){
-    document.getElementById("pamount").textContent = "Amount of pennies: " + pamount;
-    document.getElementById("pvalue").textContent = "Total value of pennies: $" + Math.round((0.01*pamount) * 100) / 100;
+    document.getElementById("pamount").textContent = "Amount: " + pamount;
+    document.getElementById("pvalue").textContent = "Total value: $" + Math.round((0.01*pamount) * 100) / 100;
 }
 
 function updateNickel(){
-    document.getElementById("namount").textContent = "Amount of nickels: " + namount;
-    document.getElementById("nvalue").textContent = "Total value of nickels: $" + Math.round((0.05*namount) * 100) / 100;
+    document.getElementById("namount").textContent = "Amount: " + namount;
+    document.getElementById("nvalue").textContent = "Total value: $" + Math.round((0.05*namount) * 100) / 100;
 }
 
 function updateDime(){
-    document.getElementById("damount").textContent = "Amount of dimes: " + damount;
-    document.getElementById("dvalue").textContent = "Total value of dimes: $" + Math.round((0.10*damount) * 100) / 100;
+    document.getElementById("damount").textContent = "Amount: " + damount;
+    document.getElementById("dvalue").textContent = "Total value: $" + Math.round((0.10*damount) * 100) / 100;
 }
 
 function updateQuarter(){
-    document.getElementById("qamount").textContent = "Amount of quarters: " + qamount;
-    document.getElementById("qvalue").textContent = "Total value of quarters: $" + Math.round((0.25*qamount) * 100) / 100;
+    document.getElementById("qamount").textContent = "Amount: " + qamount;
+    document.getElementById("qvalue").textContent = "Total value: $" + Math.round((0.25*qamount) * 100) / 100;
 }
 
 function updateHalfDollar(){
-    document.getElementById("hdamount").textContent = "Amount of half-dollars: " + hdamount;
-    document.getElementById("hdvalue").textContent = "Total value of half-dollars: $" + Math.round((0.50*hdamount) * 100) / 100;
+    document.getElementById("hdamount").textContent = "Amount: " + hdamount;
+    document.getElementById("hdvalue").textContent = "Total value: $" + Math.round((0.50*hdamount) * 100) / 100;
 }
 
 function updateDollar(){
-    document.getElementById("dolamount").textContent = "Amount of dollar coins: " + dolamount;
-    document.getElementById("dolvalue").textContent = "Total value of dollar coins: $" + Math.round((1.00*dolamount) * 100) / 100;
+    document.getElementById("dolamount").textContent = "Amount: " + dolamount;
+    document.getElementById("dolvalue").textContent = "Total value: $" + Math.round((1.00*dolamount) * 100) / 100;
 }
 
 function addPenny(){
